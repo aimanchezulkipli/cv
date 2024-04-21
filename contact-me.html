@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Contact Me!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -59,6 +60,15 @@
 
     input[type="submit"]:hover {
       background-color: #0056b3;
+    }
+
+    @media only screen and (max-width: 600px) {
+      /* Adjustments for smaller screens */
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: calc(100% - 20px);
+      }
     }
   </style>
 </head>
