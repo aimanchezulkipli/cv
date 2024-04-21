@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
@@ -11,6 +11,18 @@
       color: #fff;
       margin: 0;
       padding: 0;
+      opacity: 0; /* Start with content hidden */
+      animation: fadeInAnimation 1s ease forwards; /* Apply fade-in animation */
+    }
+
+    /* Keyframes for fade-in animation */
+    @keyframes fadeInAnimation {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     .container {
@@ -37,7 +49,8 @@
       margin-bottom: 20px;
     }
 
-    ul, ol {
+    ul,
+    ol {
       margin-bottom: 20px;
     }
 
@@ -45,7 +58,8 @@
       margin-bottom: 20px;
     }
 
-    th, td {
+    th,
+    td {
       padding: 10px;
       border: 1px solid #333;
       color: #fff;
